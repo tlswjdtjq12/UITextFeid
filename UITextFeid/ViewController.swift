@@ -34,5 +34,8 @@ class ViewController: UIViewController {
         txt01.text = ""
         txt01.resignFirstResponder()
     }
-    
+    //backgroung의 view를 누르면 키패드가 내려간다
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        txt01.resignFirstResponder()
+    }
 }
