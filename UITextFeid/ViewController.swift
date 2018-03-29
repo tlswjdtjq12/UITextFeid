@@ -49,9 +49,15 @@ class ViewController: UIViewController, UITextFieldDelegate {
         txt01.resignFirstResponder()
         return true
     }
+    //clear을 누르면 배경 색깔이 초록색으로 바뀐다
     func textFieldShouldClear(_ textField: UITextField) -> Bool {
         view.backgroundColor = UIColor.green
         txt01.resignFirstResponder()
+        return true
+    }
+    //TextField를 누르면 배경 색깔이 하얀색으로 바뀐다.
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        view.backgroundColor = UIColor.white
         return true
     }
 }
